@@ -125,4 +125,12 @@ public class HelloWorldTest {
         String result=   helloWorld.fizzBuzzWhizz(number);
         assertThat(result,is("FizzBuzzWhizz"));
     }
+
+    @Test
+    public void should_return_Fizz_when_input_13(){
+        int number =13;
+        HelloWorld helloWorld=new HelloWorld();
+        String result=   helloWorld.fizzBuzzWhizz(number);
+        assertThat(result,is("Fizz"));
+    }
 }

@@ -15,7 +15,9 @@ public class HelloWorld {
 //    }
      public String fizzBuzzWhizz(int number){
          StringBuffer result = new StringBuffer();
-
+         if(String.valueOf(number).contains("3")){
+             return "Fizz";
+         }
          if(number % 3 == 0){
               result.append("Fizz");
          }
